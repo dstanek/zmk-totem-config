@@ -1,5 +1,13 @@
 # My Keyboard Config
 
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="/docs/images/TOTEM_logo_bright.svg">
+    <source media="(prefers-color-scheme: light)" srcset="/docs/images/TOTEM_logo_dark.svg">
+    <img alt="TOTEM logo" src="/docs/images/TOTEM_logo_dark.svg" width="250">
+  </picture>
+</div>
+
 TOTEM is a 38 key column-staggered split keyboard. I purchased mine from [KeyboardHoarders](https://keyboard-hoarders.com/products/totem-wired-split-keyboard-night).
 
 ## My Keymap
@@ -21,12 +29,6 @@ TOTEM is a 38 key column-staggered split keyboard. I purchased mine from [Keyboa
 11. Press reset twice
 12. Drag and drop the totem right firmware file.
 13. Unplug right 
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="/docs/images/TOTEM_logo_bright.svg">
-  <source media="(prefers-color-scheme: light)" srcset="/docs/images/TOTEM_logo_dark.svg">
-  <img alt="TOTEM logo" src="/docs/images/TOTEM_logo_dark.svg">
-</picture>
 
 ## ZMK CONFIG FOR THE TOTEM SPLIT KEYBOARD
 
