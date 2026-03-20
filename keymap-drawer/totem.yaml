@@ -33,7 +33,7 @@ layers:
   - .
   - /
   - ''''
-  - LEFT GUI
+  - ESC
   - TAB
   - {t: SPACE, h: NAVI}
   - {t: RET, h: SYM}
