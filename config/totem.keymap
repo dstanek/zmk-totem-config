@@ -28,6 +28,16 @@
     tapping-term-ms = <220>;
 };
 
+// Layer taps deliberately have NO require-prior-idle-ms. A modifier is almost
+// always preceded by a pause, so the guard suits &mt; a symbol layer is not,
+// because a bracket is wanted mid-burst. This mirrors the (require-prior-idle 0)
+// opt-out on D, K, Caps and Right Alt in the kanata config.
+&lt {
+    quick-tap-ms = <100>;
+    flavor = "tap-preferred";
+    tapping-term-ms = <220>;
+};
+
 / {
     combos {
         compatible = "zmk,combos";
@@ -70,8 +80,8 @@
 
             bindings = <
                   &kp Q       &kp W       &kp E         &kp R        &kp T            &kp Y        &kp U        &kp I          &kp O       &kp P
-                  &mt LGUI A  &mt LALT S  &mt LSHFT D   &mt LCTRL F  &kp G            &kp H        &mt RCTRL J  &mt RSHFT K    &mt RALT L  &mt RGUI SEMI
-&kp ESC           &kp Z       &kp X       &kp C         &kp V        &kp B            &kp N        &kp M        &kp COMMA      &kp DOT     &kp SLASH       &kp APOS
+                  &mt LSHFT A &mt LALT S  &lt SYM D     &mt LCTRL F  &kp G            &kp H        &mt RCTRL J  &lt SYM K      &mt RALT L  &mt RSHFT SEMI
+&kp ESC           &kp Z       &kp X       &kp C         &mt LGUI V   &kp B            &kp N        &mt RGUI M   &kp COMMA      &kp DOT     &kp SLASH       &kp APOS
                                           &kp ESC       &kp TAB      &lt NAV SPACE    &lt SYM RET  &kp BSPC     &kp LEFT_ALT
             >;
         };
@@ -103,10 +113,10 @@
             // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 
             bindings = <
-        &kp EXCL     &kp AT       &kp HASH   &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS      &kp RA(U)             &kp SQT                &kp DQT
-        &kp RA(A)    &trans       &kp RA(S)  &trans    &trans       &kp MINUS  &kp EQUAL     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RA(O)
-&trans  &kp RA(F18)  &kp RA(F19)  &trans     &trans    &trans       &kp GRAVE  &kp ASTERISK  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp BSLH   &trans
-                                  &trans     &gif      &mo ADJ      &trans     &kp C_PP      &trans
+             &kp N1     &kp N2     &kp N3     &kp N4      &kp N5        &kp N6     &kp N7     &kp N8     &kp N9     &kp N0
+             &kp LSHFT  &kp LALT   &trans     &kp LCTRL   &kp LBKT      &kp RBKT   &kp LBRC   &kp RBRC   &kp EQUAL  &kp RSHFT
+&kp RA(F18)  &kp MINUS  &kp UNDER  &kp GRAVE  &trans      &kp BSLH      &kp PIPE   &kp DQT    &kp COMMA  &kp DOT    &kp SLASH  &kp RA(F19)
+                                   &trans     &gif       &mo ADJ       &trans     &kp C_PP   &trans
             >;
         };
 
