@@ -11,24 +11,24 @@ layers:
   - I
   - O
   - P
-  - {t: A, h: LGUI}
+  - {t: A, h: LSHFT}
   - {t: S, h: LALT}
-  - {t: D, h: LSHFT}
+  - {t: D, h: SYM}
   - {t: F, h: LCTRL}
   - G
   - H
   - {t: J, h: RCTRL}
-  - {t: K, h: RSHFT}
+  - {t: K, h: SYM}
   - {t: L, h: RALT}
-  - {t: ;, h: RGUI}
+  - {t: ;, h: RSHFT}
   - ESC
   - Z
   - X
   - C
-  - V
+  - {t: V, h: LGUI}
   - B
   - N
-  - M
+  - {t: M, h: RGUI}
   - ','
   - .
   - /
@@ -41,85 +41,85 @@ layers:
   - LEFT ALT
   NAVI:
   - ESC
-  - BT CLR
-  - UP
-  - '='
-  - '{'
-  - '}'
-  - '7'
-  - '8'
-  - '9'
-  - KP PLUS
+  - Ctl+LEFT
+  - {t: ▽, type: trans}
+  - Ctl+RIGHT
+  - {t: ▽, type: trans}
+  - HOME
+  - PG UP
+  - {t: ▽, type: trans}
+  - PG DN
+  - {t: ▽, type: trans}
   - LSHFT
+  - LALT
+  - {t: ▽, type: trans}
+  - LCTRL
+  - {t: ▽, type: trans}
   - LEFT
   - DOWN
+  - UP
   - RIGHT
-  - '['
-  - ']'
-  - '4'
-  - '5'
-  - '6'
-  - KP MINUS
+  - END
   - '&caps_word'
   - DEL
-  - PG UP
+  - {t: ▽, type: trans}
   - CAPS
-  - PG DN
-  - (
-  - )
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - ADJ
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  SYM:
   - '1'
   - '2'
   - '3'
-  - KP MULTIPLY
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - LSHFT
+  - LALT
   - {type: held}
-  - ADJ
-  - KP 0
-  - {t: ▽, type: trans}
-  SYM:
-  - '!'
-  - '@'
-  - '#'
-  - $
-  - '%'
-  - ^
-  - '&'
-  - AltGr+U
-  - ''''
-  - '"'
-  - AltGr+A
-  - {t: ▽, type: trans}
-  - AltGr+S
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '-'
-  - '='
-  - (
-  - )
-  - AltGr+O
-  - {t: ▽, type: trans}
-  - AltGr+F18
-  - AltGr+F19
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '`'
-  - '*'
+  - LCTRL
   - '['
   - ']'
-  - \
+  - '{'
+  - '}'
+  - '='
+  - RSHFT
+  - AltGr+F18
+  - '-'
+  - _
+  - '`'
   - {t: ▽, type: trans}
+  - \
+  - '|'
+  - '"'
+  - ','
+  - .
+  - /
+  - AltGr+F19
   - {t: ▽, type: trans}
   - '&gif'
   - ADJ
-  - {type: held}
+  - {t: ▽, type: trans}
   - PP
   - {t: ▽, type: trans}
   ADJ:
   - '&sys_reset'
-  - {t: ▽, type: trans}
+  - BT CLR
   - OUT TOG
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
