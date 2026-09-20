@@ -115,7 +115,7 @@
             bindings = <
              &kp N1     &kp N2     &kp N3     &kp N4      &kp N5        &kp N6     &kp N7     &kp N8     &kp N9     &kp N0
              &kp LSHFT  &kp LALT   &trans     &kp LCTRL   &kp LBKT      &kp RBKT   &kp LBRC   &kp RBRC   &kp EQUAL  &kp RSHFT
-&kp RA(F18)  &kp MINUS  &kp UNDER  &kp GRAVE  &trans      &kp BSLH      &kp PIPE   &kp DQT    &kp COMMA  &kp DOT    &kp SLASH  &kp RA(F19)
+&trans       &kp MINUS  &kp UNDER  &kp GRAVE  &trans      &kp BSLH      &kp PIPE   &kp DQT    &kp COMMA  &kp DOT    &kp SLASH  &trans
                                    &trans     &gif       &mo ADJ       &trans     &kp C_PP   &trans
             >;
         };
