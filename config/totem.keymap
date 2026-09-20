@@ -96,7 +96,7 @@
             // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 
             bindings = <
-            &kp ESC    &kp LC(LEFT)  &trans    &kp LC(RIGHT)  &trans      &kp HOME  &kp PG_UP  &trans   &kp PG_DN  &trans
+            &kp ESC    &trans        &trans    &trans         &trans      &kp HOME  &kp PG_UP  &trans   &kp PG_DN  &trans
             &kp LSHFT  &kp LALT      &trans    &kp LCTRL      &trans      &kp LEFT  &kp DOWN   &kp UP   &kp RIGHT  &kp END
 &caps_word  &kp DEL    &trans        &kp CAPS  &trans         &trans      &trans    &trans     &trans   &trans     &trans   &trans
                                      &trans    &trans         &trans      &mo ADJ   &trans     &trans
