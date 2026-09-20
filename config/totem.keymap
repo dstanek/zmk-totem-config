@@ -46,6 +46,9 @@
             timeout-ms = <200>;
             key-positions = <0 1>;
             bindings = <&kp ESC>;
+            // Not on SYM, where Q and W are the digits 1 and 2 -- rolling
+            // them to type "12" would otherwise fire Escape.
+            layers = <BASE NAV ADJ>;
         };
     };
 
@@ -122,6 +125,7 @@
 
         // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
+
         adjust_layer {
             // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 
@@ -136,5 +140,6 @@
                                           &trans        &trans        &trans            &trans  &trans  &trans
             >;
         };
+
     };
 };
