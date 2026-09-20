@@ -34,16 +34,16 @@ layers:
   - /
   - ''''
   - ESC
-  - TAB
+  - {t: TAB, h: MOUSE}
   - {t: SPACE, h: NAVI}
   - {t: RET, h: SYM}
   - BSPC
   - LEFT ALT
   NAVI:
   - ESC
-  - Ctl+LEFT
   - {t: ▽, type: trans}
-  - Ctl+RIGHT
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - HOME
   - PG UP
@@ -99,7 +99,7 @@ layers:
   - '}'
   - '='
   - RSHFT
-  - AltGr+F18
+  - {t: ▽, type: trans}
   - '-'
   - _
   - '`'
@@ -110,7 +110,7 @@ layers:
   - ','
   - .
   - /
-  - AltGr+F19
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&gif'
   - ADJ
@@ -156,6 +156,46 @@ layers:
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  MOUSE:
+  - {t: MOUSE, h: toggle}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&mkp MB5'
+  - '&mkp LCLK'
+  - '&mkp MCLK'
+  - '&mkp RCLK'
+  - '&mkp MB4'
+  - '&mmv MOVE_LEFT'
+  - '&mmv MOVE_DOWN'
+  - '&mmv MOVE_UP'
+  - '&mmv MOVE_RIGHT'
+  - '&mkp LCLK'
+  - {t: BASE, h: toggle}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&msc SCRL_LEFT'
+  - '&msc SCRL_DOWN'
+  - '&msc SCRL_UP'
+  - '&msc SCRL_RIGHT'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
 combos:
 - p: [0, 1]
   k: ESC
+  l: [BASE, NAVI, ADJ]
