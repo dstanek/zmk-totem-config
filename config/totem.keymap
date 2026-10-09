@@ -91,7 +91,7 @@
             &kp ESC    &trans        &trans    &trans         &trans      &kp HOME  &kp PG_UP  &trans   &kp PG_DN  &trans
             &kp LSHFT  &kp LALT      &trans    &kp LCTRL      &trans      &kp LEFT  &kp DOWN   &kp UP   &kp RIGHT  &kp END
 &caps_word  &kp DEL    &trans        &kp CAPS  &trans         &trans      &trans    &trans     &trans   &trans     &trans   &trans
-                                     &trans    &trans         &trans      &mo ADJ   &trans     &trans
+                                     &trans    &trans         &trans      &trans    &trans     &trans
             >;
         };
 
@@ -102,7 +102,7 @@
              &kp N1     &kp N2     &kp N3     &kp N4      &kp N5        &kp N6     &kp N7     &kp N8     &kp N9     &kp N0
              &kp LSHFT  &kp LALT   &trans     &kp LCTRL   &kp LBKT      &kp RBKT   &kp LBRC   &kp RBRC   &kp EQUAL  &kp RSHFT
 &trans       &kp MINUS  &kp UNDER  &kp GRAVE  &trans      &kp BSLH      &kp PIPE   &kp DQT    &kp COMMA  &kp DOT    &kp SLASH  &trans
-                                   &trans     &gif       &mo ADJ       &trans     &kp C_PP   &trans
+                                   &trans     &gif       &trans        &trans     &kp C_PP   &trans
             >;
         };
 
