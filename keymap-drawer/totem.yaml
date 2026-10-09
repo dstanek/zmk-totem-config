@@ -33,12 +33,12 @@ layers:
   - .
   - /
   - {t: '''', h: ADJ}
-  - {t: ESC, h: MOUSE}
+  - LEFT ALT
   - TAB
   - {t: SPACE, h: NAVI}
   - {t: RET, h: SYM}
   - BSPC
-  - LEFT ALT
+  - LGUI
   NAVI:
   - ESC
   - {t: ▽, type: trans}
@@ -189,7 +189,7 @@ layers:
   - '&msc SCRL_RIGHT'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
