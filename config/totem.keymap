@@ -40,6 +40,20 @@
 };
 
 / {
+    behaviors {
+        // A slower layer tap for the outer pinky keys, which reach ADJ. That
+        // layer is rarely needed, so the longer term keeps a lingering Esc or
+        // apostrophe from landing on it by accident.
+        lt_slow: lt_slow {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <300>;
+            quick-tap-ms = <100>;
+            bindings = <&mo>, <&kp>;
+        };
+    };
+
     combos {
         compatible = "zmk,combos";
 
@@ -79,8 +93,8 @@
             bindings = <
                   &kp Q       &kp W       &kp E         &kp R        &kp T            &kp Y        &kp U        &kp I          &kp O       &kp P
                   &mt LSHFT A &mt LALT S  &lt SYM D     &mt LCTRL F  &kp G            &kp H        &mt RCTRL J  &lt SYM K      &mt RALT L  &mt RSHFT SEMI
-&kp ESC           &kp Z       &kp X       &kp C         &mt LGUI V   &kp B            &kp N        &mt RGUI M   &kp COMMA      &kp DOT     &kp SLASH       &kp APOS
-                                          &kp ESC       &lt MOUSE TAB &lt NAV SPACE    &lt SYM RET  &lt ADJ BSPC &kp LEFT_ALT
+&lt_slow ADJ ESC  &kp Z       &kp X       &kp C         &mt LGUI V   &kp B            &kp N        &mt RGUI M   &kp COMMA      &kp DOT     &kp SLASH       &lt_slow ADJ APOS
+                                          &lt MOUSE ESC &kp TAB       &lt NAV SPACE    &lt SYM RET  &kp BSPC     &kp LEFT_ALT
             >;
         };
 
@@ -122,7 +136,7 @@
 
             // Getreu's arrangement. Motion on vim hjkl, the wheel on the row
             // below in the same order, buttons under the left hand. Hold the
-            // Tab thumb key for a momentary peek; tap Q there to lock the
+            // Esc thumb key for a momentary peek; tap Q there to lock the
             // layer, and the Esc outer key to release it.
 
             bindings = <
