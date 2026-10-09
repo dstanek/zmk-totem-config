@@ -21,7 +21,7 @@ layers:
   - {t: K, h: SYM}
   - {t: L, h: RALT}
   - {t: ;, h: RSHFT}
-  - ESC
+  - {t: ESC, h: ADJ}
   - Z
   - X
   - C
@@ -32,9 +32,9 @@ layers:
   - ','
   - .
   - /
-  - ''''
-  - ESC
-  - {t: TAB, h: MOUSE}
+  - {t: '''', h: ADJ}
+  - {t: ESC, h: MOUSE}
+  - TAB
   - {t: SPACE, h: NAVI}
   - {t: RET, h: SYM}
   - BSPC
@@ -47,7 +47,7 @@ layers:
   - {t: ▽, type: trans}
   - HOME
   - PG UP
-  - {t: ▽, type: trans}
+  - '`'
   - PG DN
   - {t: ▽, type: trans}
   - LSHFT
@@ -75,9 +75,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
-  - ADJ
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Sft+LGUI
+  - LGUI
   SYM:
   - '1'
   - '2'
@@ -113,7 +113,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&gif'
-  - ADJ
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - PP
   - {t: ▽, type: trans}
@@ -138,7 +138,7 @@ layers:
   - F5
   - F6
   - F11
-  - {t: BT, h: '0'}
+  - {t: BT, h: '0', type: held}
   - {t: BT, h: '1'}
   - {t: BT, h: '2'}
   - {t: BT, h: '3'}
@@ -152,8 +152,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
-  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   MOUSE:
@@ -189,8 +189,8 @@ layers:
   - '&msc SCRL_RIGHT'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
