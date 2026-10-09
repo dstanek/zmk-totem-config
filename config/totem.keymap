@@ -94,7 +94,7 @@
                   &kp Q       &kp W       &kp E         &kp R        &kp T            &kp Y        &kp U        &kp I          &kp O       &kp P
                   &mt LSHFT A &mt LALT S  &lt SYM D     &mt LCTRL F  &kp G            &kp H        &mt RCTRL J  &lt SYM K      &mt RALT L  &mt RSHFT SEMI
 &lt_slow ADJ ESC  &kp Z       &kp X       &kp C         &mt LGUI V   &kp B            &kp N        &mt RGUI M   &kp COMMA      &kp DOT     &kp SLASH       &lt_slow ADJ APOS
-                                          &lt MOUSE ESC &kp TAB       &lt NAV SPACE    &lt SYM RET  &kp BSPC     &kp LEFT_ALT
+                                          &kp LEFT_ALT  &kp TAB       &lt NAV SPACE    &lt SYM RET  &kp BSPC     &kp LGUI
             >;
         };
 
@@ -135,9 +135,9 @@
             label = "MOUSE";
 
             // Getreu's arrangement. Motion on vim hjkl, the wheel on the row
-            // below in the same order, buttons under the left hand. Hold the
-            // Esc thumb key for a momentary peek; tap Q there to lock the
-            // layer, and the Esc outer key to release it.
+            // below in the same order, buttons under the left hand. Nothing
+            // on base reaches this layer for now; once on it, tap Q to lock
+            // the layer and the Esc outer key to release it.
 
             bindings = <
             &to MOUSE  &trans        &trans        &trans        &trans        &trans              &trans             &trans           &trans              &trans
