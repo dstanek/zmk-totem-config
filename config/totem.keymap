@@ -113,11 +113,17 @@
         sim_layer {
             label = "SYM";
 
+            // The number row and the keys right of P on a regular keyboard,
+            // brought within reach as plain keys, so Shift gives the usual
+            // pair: { } on L and ;, _ + on H and J. K is empty because it is
+            // one of the keys holding this layer. Shift is on A, on ; when
+            // held, and on the outer left thumb, which reaches ! on Q.
+
             bindings = <
              &kp N1     &kp N2     &kp N3     &kp N4      &kp N5        &kp N6     &kp N7     &kp N8     &kp N9     &kp N0
-             &kp LSHFT  &kp LALT   &trans     &kp LCTRL   &kp LBKT      &kp RBKT   &kp LBRC   &kp RBRC   &kp EQUAL  &kp RSHFT
+             &kp LSHFT  &kp LALT   &trans     &kp LCTRL   &none         &kp MINUS  &kp EQUAL  &none      &kp LBKT   &mt RSHFT RBKT
 &trans       &kp MINUS  &kp UNDER  &kp GRAVE  &trans      &kp BSLH      &kp PIPE   &kp DQT    &kp COMMA  &kp DOT    &kp SLASH  &trans
-                                   &trans     &gif       &trans        &trans     &kp C_PP   &trans
+                                   &kp LSHFT  &gif       &trans        &trans     &kp C_PP   &trans
             >;
         };
 
