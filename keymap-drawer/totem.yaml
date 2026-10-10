@@ -34,7 +34,7 @@ layers:
   - /
   - {t: '''', h: ADJ}
   - MOUSE
-  - TAB
+  - {t: TAB, h: MEDIA}
   - {t: SPACE, h: NAVI}
   - {t: RET, h: SYM}
   - {t: BSPC, h: LGUI}
@@ -195,6 +195,45 @@ layers:
   - '&mkp LCLK'
   - '&mkp MCLK'
   - '&mkp RCLK'
+  MEDIA:
+  - Ctl+Gui+Q
+  - ''
+  - Gui+Sft+3
+  - Gui+Sft+4
+  - Gui+Sft+5
+  - ''
+  - BRI DN
+  - BRI UP
+  - ''
+  - ''
+  - Ctl+LEFT
+  - Ctl+DOWN
+  - Ctl+UP
+  - Ctl+RIGHT
+  - Gui+SPACE
+  - PREV
+  - VOL DN
+  - VOL UP
+  - NEXT
+  - MUTE
+  - ''
+  - ''
+  - ''
+  - Ctl+Gui+Sft+4
+  - Ctl+Gui+SPACE
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {type: held}
+  - ''
+  - PP
+  - ''
+  - ''
 combos:
 - p: [0, 1]
   k: ESC
