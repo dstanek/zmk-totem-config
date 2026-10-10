@@ -34,11 +34,11 @@ layers:
   - /
   - {t: '''', h: ADJ}
   - MOUSE
-  - {t: TAB, h: NUM}
+  - TAB
   - {t: SPACE, h: NAVI}
   - {t: RET, h: SYM}
-  - BSPC
-  - LGUI
+  - {t: BSPC, h: LGUI}
+  - {t: SYM, h: sticky}
   NAVI:
   - ESC
   - {t: ▽, type: trans}
@@ -90,15 +90,15 @@ layers:
   - '9'
   - '0'
   - LSHFT
-  - LALT
+  - '!'
   - {type: held}
-  - LCTRL
-  - '['
-  - ']'
-  - '{'
-  - '}'
+  - (
+  - )
+  - '-'
   - '='
-  - RSHFT
+  - ''
+  - '['
+  - {t: ']', h: RSHFT}
   - {t: ▽, type: trans}
   - '-'
   - _
@@ -111,7 +111,7 @@ layers:
   - .
   - /
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - LSHFT
   - '&gif'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -195,45 +195,6 @@ layers:
   - '&mkp LCLK'
   - '&mkp MCLK'
   - '&mkp RCLK'
-  NUM:
-  - {t: NUM, h: toggle}
-  - ''
-  - ''
-  - ''
-  - ''
-  - '['
-  - '7'
-  - '8'
-  - '9'
-  - ']'
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - '4'
-  - '5'
-  - '6'
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - '1'
-  - '2'
-  - '3'
-  - ''
-  - ''
-  - ''
-  - {type: held}
-  - ''
-  - '0'
-  - .
-  - '-'
 combos:
 - p: [0, 1]
   k: ESC
